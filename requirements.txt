@@ -1,0 +1,16 @@
+# --- Dữ liệu & Xử lý ---
+pandas>=2.0.0
+numpy
+
+# --- Web Crawler ---
+requests
+beautifulsoup4
+
+# --- LLM & AI APIs ---
+# Quan trọng: google-generativeai phải mới nhất để hỗ trợ model Flash 1.5
+google-generativeai>=0.7.0
+groq
+
+# --- Tiện ích & Hệ thống ---
+python-dotenv
+tqdm

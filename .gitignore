@@ -1,0 +1,13 @@
+# Bỏ qua file chứa API Key (CỰC QUAN TRỌNG)
+.env
+
+# Bỏ qua các file rác của Python
+__pycache__/
+*.pyc
+
+# Bỏ qua file môi trường ảo (nếu cậu có dùng venv)
+venv/
+env/
+.idea/
+.vscode/
+.DS_Store
