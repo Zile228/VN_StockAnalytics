@@ -220,7 +220,7 @@ def run_sentiment_analysis(df, output_file):
         append_to_csv(save_row, output_file)
         success_count += 1
         
-        # Ngủ nhẹ 0.2s để giảm tải nếu Groq đang chạy quá nhanh (optional)
+        # Ngủ 0.2s để giảm tải nếu Groq đang chạy quá nhanh (optional)
         time.sleep(0.2) 
 
     print(f"\nDone! Processed {success_count} items.")

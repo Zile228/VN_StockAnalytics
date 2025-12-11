@@ -9,8 +9,8 @@ from datetime import datetime, timedelta
 import config  # Import config từ thư mục gốc
 
 # Cấu hình crawler
-NUM_PAGES_CAFEF = 5
-DAYS_BACK_VNSTOCK = 5 
+NUM_PAGES_CAFEF = 200
+DAYS_BACK_VNSTOCK = 180 
 
 HEADERS_COMMON = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
