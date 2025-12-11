@@ -1,11 +1,11 @@
-# Bỏ qua file chứa API Key (CỰC QUAN TRỌNG)
+# Bỏ qua file chứa API Key
 .env
 
 # Bỏ qua các file rác của Python
 __pycache__/
 *.pyc
 
-# Bỏ qua file môi trường ảo (nếu cậu có dùng venv)
+# Bỏ qua file môi trường ảo
 venv/
 env/
 .idea/

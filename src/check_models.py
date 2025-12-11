@@ -8,7 +8,7 @@ load_dotenv()
 api_key = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=api_key)
 
-print("--- DANH SÁCH MODEL KHẢ DỤNG VỚI KEY CỦA BẠN ---")
+print("--- DANH SÁCH MODEL KHẢ DỤNG ---")
 try:
     available_models = []
     for m in genai.list_models():

@@ -7,7 +7,7 @@ requests
 beautifulsoup4
 
 # --- LLM & AI APIs ---
-# Quan trọng: google-generativeai phải mới nhất để hỗ trợ model Flash 1.5
+# Quan trọng: google-generativeai phải mới nhất để hỗ trợ model Flash
 google-generativeai>=0.7.0
 groq
 
