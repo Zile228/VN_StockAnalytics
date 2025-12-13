@@ -28,15 +28,27 @@ Chiến lược **"Smart Cascading Fallback"**:
 #### **A. Daily Weighted Sentiment (Cảm xúc trọng số trong ngày)**
 *   **Vấn đề:** Một ngày có nhiều tin, tin rác không nên ảnh hưởng bằng tin chính thống.
 *   **Công thức:**
-    $$ Score_{daily} = \frac{\sum (Score_i \times Relevance_i)}{\sum Relevance_i} $$
-    *(Trong đó: `Score` là điểm AI chấm từ -5 đến 5, `Relevance` là độ liên quan AI chấm từ 0 đến 1).*
+
+    Score_daily = sum(Score_i * Relevance_i) / sum(Relevance_i)
+
+    Trong đó:
+    - Score_i ∈ [-5, 5]
+    - Relevance_i ∈ [0, 1]
+  
 *   **Ý nghĩa:** Tin nào AI đánh giá là "liên quan trực tiếp đến giá cổ phiếu" sẽ có sức nặng lớn hơn.
 
 #### **B. Sentiment Decay (Dư âm cảm xúc - Alpha Signal)**
 *   **Vấn đề:** Tin tốt ra hôm nay (+5 điểm) không biến mất ngay ngày mai. Nó vẫn còn tác động tâm lý nhưng giảm dần.
 *   **Công thức (Exponential Decay):**
-    $$ S_t = S_{new} + (S_{t-1} \times \alpha) $$
-    *(Trong đó: $S_{new}$ là tin mới hôm nay, $\alpha = 0.85$ là hệ số lãng quên).*
+
+    Sentiment Decay (Exponential Decay):
+
+    S_t = S_new + (S_{t-1} * alpha)
+    
+    Trong đó:
+    - S_new: sentiment từ tin tức trong ngày
+    - alpha = 0.85: hệ số lãng quên (decay factor)
+
 *   **Ý nghĩa:** Đây là chỉ số quan trọng nhất để bắt trend. Nó giúp model hiểu được "đà" tâm lý tích lũy của nhà đầu tư qua nhiều ngày.
 
 #### **C. Buzz Volume 7D (Độ ồn ào tuần)**
