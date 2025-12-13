@@ -13,6 +13,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 BASE_DIR = Path(__file__).parent
 DATA_RAW_DIR = BASE_DIR / "data" / "bronze"
 DATA_PROCESSED_DIR = BASE_DIR / "data" / "silver"
+DATA_GOLD_DIR = BASE_DIR / "data" / "gold"
 
 # Đảm bảo thư mục tồn tại
 os.makedirs(DATA_RAW_DIR, exist_ok=True)
