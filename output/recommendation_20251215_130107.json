@@ -1,0 +1,67 @@
+{
+  "horizon_days": 7,
+  "recommended_actions": [
+    {
+      "symbol": "FPT",
+      "action": "sell",
+      "target_weight": 0.0,
+      "confidence": 0.38487871872048174,
+      "expected_return": -0.01816310125,
+      "uncertainty_band": {
+        "p10": -0.059499651058637186,
+        "p50": -0.01816310125,
+        "p90": 0.023173448558637184
+      },
+      "order_plan": {
+        "order_type": "limit",
+        "entry_rule": "SELL via LIMIT: place near last_close=95.60 (consider slight improvement vs last print).",
+        "ladder": null,
+        "time_in_force": "day"
+      },
+      "risk_controls": {
+        "stop_loss_rule": "StopLoss: for SELL, set at entry + 1.2*ATR14 => ~97.76 (ATR14=1.80).",
+        "take_profit_rule": "TakeProfit: for SELL, set at entry - 2.0*ATR14 => ~92.00 (ATR14=1.80).",
+        "max_loss_pct_portfolio": 0.01
+      },
+      "evidence": [
+        "[FPT] Held position qty=200.0 avg_cost=95000.00",
+        "[FPT] Weak signal expected_return=-0.0182 (mom+sentiment stub)."
+      ],
+      "invalidation": [
+        "Nếu tín hiệu đảo chiều tích cực (momentum + sentiment) trong 3-5 phiên."
+      ]
+    },
+    {
+      "symbol": "VCB",
+      "action": "sell",
+      "target_weight": 0.0,
+      "confidence": 0.48899446656342127,
+      "expected_return": -0.012290896484468749,
+      "uncertainty_band": {
+        "p10": -0.037503656095899715,
+        "p50": -0.012290896484468749,
+        "p90": 0.012921863126962214
+      },
+      "order_plan": {
+        "order_type": "limit",
+        "entry_rule": "SELL via LIMIT: place near last_close=58.20 (consider slight improvement vs last print).",
+        "ladder": null,
+        "time_in_force": "day"
+      },
+      "risk_controls": {
+        "stop_loss_rule": "StopLoss: for SELL, set at entry + 1.2*ATR14 => ~59.17 (ATR14=0.81).",
+        "take_profit_rule": "TakeProfit: for SELL, set at entry - 2.0*ATR14 => ~56.59 (ATR14=0.81).",
+        "max_loss_pct_portfolio": 0.01
+      },
+      "evidence": [
+        "[VCB] Held position qty=150.0 avg_cost=85000.00",
+        "[VCB] Weak signal expected_return=-0.0123 (mom+sentiment stub)."
+      ],
+      "invalidation": [
+        "Nếu tín hiệu đảo chiều tích cực (momentum + sentiment) trong 3-5 phiên."
+      ]
+    }
+  ],
+  "cash_weight": 1.0,
+  "notes": "LLM disabled: plan được tạo bằng rulebase + optimizer deterministic. Hãy kiểm tra lại mức rủi ro/khả năng khớp lệnh trước khi đặt lệnh. | Macro: Y2024Q4 INF=0.0285 GDP=0.0709 DC=0.1509 | USDVND last=2025-12-10 value=26357.00"
+}

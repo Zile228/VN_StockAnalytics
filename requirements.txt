@@ -3,6 +3,8 @@ pandas>=2.0.0
 numpy
 openpyxl
 pydantic>=2.0.0
+fastapi>=0.110.0
+uvicorn>=0.23.0
 
 # --- Web Crawler ---
 requests

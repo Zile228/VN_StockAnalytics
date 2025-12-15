@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{actions}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{state}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{mask} \PYG{o}{=} \PYG{n}{state}
+    \PYG{n}{actions} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]}
+    \PYG{n}{idx} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{pos\PYGZus{}to\PYGZus{}index}\PYG{p}{(}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n}{idx} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{k+kc}{None} \PYG{o+ow}{and} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{is\PYGZus{}dirty}\PYG{p}{(}\PYG{n}{mask}\PYG{p}{,} \PYG{n}{idx}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{actions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{suck}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+    \PYG{k}{for} \PYG{n}{nx}\PYG{p}{,} \PYG{n}{ny} \PYG{o+ow}{in} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{grid}\PYG{o}{.}\PYG{n}{neighbors}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{actions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{move}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{p}{(}\PYG{n}{nx}\PYG{p}{,} \PYG{n}{ny}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{actions}
+\end{MintedVerbatim}

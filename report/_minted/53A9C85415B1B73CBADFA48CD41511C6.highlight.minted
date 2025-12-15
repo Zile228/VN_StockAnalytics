@@ -1,0 +1,10 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{generate\PYGZus{}random\PYGZus{}problem}\PYG{p}{(}\PYG{n}{m}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{n}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{dirty\PYGZus{}count}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{seed}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{rnd} \PYG{o}{=} \PYG{n}{random}\PYG{o}{.}\PYG{n}{Random}\PYG{p}{(}\PYG{n}{seed}\PYG{p}{)}
+    \PYG{n}{start} \PYG{o}{=} \PYG{p}{(}\PYG{n}{rnd}\PYG{o}{.}\PYG{n}{randrange}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{p}{,} \PYG{n}{rnd}\PYG{o}{.}\PYG{n}{randrange}\PYG{p}{(}\PYG{n}{m}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{dirty\PYGZus{}positions} \PYG{o}{=} \PYG{n+nb}{set}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{while} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)} \PYG{o}{\PYGZlt{}} \PYG{n}{dirty\PYGZus{}count}\PYG{p}{:}
+        \PYG{n}{p} \PYG{o}{=} \PYG{p}{(}\PYG{n}{rnd}\PYG{o}{.}\PYG{n}{randrange}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)}\PYG{p}{,} \PYG{n}{rnd}\PYG{o}{.}\PYG{n}{randrange}\PYG{p}{(}\PYG{n}{m}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{dirty\PYGZus{}positions}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{p}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{m}\PYG{p}{,} \PYG{n}{n}\PYG{p}{,} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}\PYG{p}{,} \PYG{n}{start}
+\end{MintedVerbatim}

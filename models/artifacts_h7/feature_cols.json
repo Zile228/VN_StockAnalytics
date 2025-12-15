@@ -1,0 +1,22 @@
+[
+  "close",
+  "ret_1d",
+  "ret_5d",
+  "vol_20d",
+  "atr_14",
+  "avg_vol_20d",
+  "vol_z_20d",
+  "sent_7d",
+  "sent_rel_7d",
+  "sent_n_7d",
+  "fund_year",
+  "fund_quarter",
+  "fund_roe",
+  "fund_roa",
+  "fund_p_e",
+  "fund_p_b",
+  "macro_inf",
+  "macro_gdp",
+  "macro_dc",
+  "fx_ret_5d"
+]

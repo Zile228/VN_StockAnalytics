@@ -1,0 +1,16 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{state}\PYG{p}{,} \PYG{n}{action}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{mask} \PYG{o}{=} \PYG{n}{state}
+    \PYG{n}{name}\PYG{p}{,} \PYG{n}{param} \PYG{o}{=} \PYG{n}{action}
+    \PYG{k}{if} \PYG{n}{name} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{suck}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+        \PYG{n}{idx} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{pos\PYGZus{}to\PYGZus{}index}\PYG{p}{(}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{new\PYGZus{}mask} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{clear\PYGZus{}bit}\PYG{p}{(}\PYG{n}{mask}\PYG{p}{,} \PYG{n}{idx}\PYG{p}{)} \PYG{k}{if} \PYG{n}{idx} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{k+kc}{None} \PYG{k}{else} \PYG{n}{mask}
+        \PYG{n}{penalty} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}count}\PYG{p}{(}\PYG{n}{new\PYGZus{}mask}\PYG{p}{)}
+        \PYG{n}{step\PYGZus{}cost} \PYG{o}{=} \PYG{l+m+mi}{1} \PYG{o}{+} \PYG{n}{penalty}
+        \PYG{k}{return} \PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y}\PYG{p}{,} \PYG{n}{new\PYGZus{}mask}\PYG{p}{)}\PYG{p}{,} \PYG{n}{step\PYGZus{}cost}
+    \PYG{k}{else}\PYG{p}{:} \PYG{c+c1}{\PYGZsh{} move}
+        \PYG{n}{nx}\PYG{p}{,} \PYG{n}{ny} \PYG{o}{=} \PYG{n}{param}
+        \PYG{n}{penalty} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}count}\PYG{p}{(}\PYG{n}{mask}\PYG{p}{)}
+        \PYG{n}{step\PYGZus{}cost} \PYG{o}{=} \PYG{l+m+mi}{1} \PYG{o}{+} \PYG{n}{penalty}
+        \PYG{k}{return} \PYG{p}{(}\PYG{n}{nx}\PYG{p}{,} \PYG{n}{ny}\PYG{p}{,} \PYG{n}{mask}\PYG{p}{)}\PYG{p}{,} \PYG{n}{step\PYGZus{}cost}
+\end{MintedVerbatim}

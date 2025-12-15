@@ -1,0 +1,23 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{mst\PYGZus{}lower\PYGZus{}bound}\PYG{p}{(}\PYG{n}{points}\PYG{p}{,} \PYG{n}{distance\PYGZus{}func}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{points}\PYG{p}{)} \PYG{o}{\PYGZlt{}}\PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{:}
+        \PYG{k}{return} \PYG{l+m+mi}{0}
+    \PYG{n}{remaining} \PYG{o}{=} \PYG{n+nb}{set}\PYG{p}{(}\PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{points}\PYG{p}{)}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{current} \PYG{o}{=} \PYG{n+nb}{next}\PYG{p}{(}\PYG{n+nb}{iter}\PYG{p}{(}\PYG{n}{remaining}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{remaining}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{current}\PYG{p}{)}
+    \PYG{n}{in\PYGZus{}tree} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{current}\PYG{p}{\PYGZcb{}}
+    \PYG{n}{total} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{k}{while} \PYG{n}{remaining}\PYG{p}{:}
+        \PYG{n}{best} \PYG{o}{=} \PYG{k+kc}{None}
+        \PYG{n}{best\PYGZus{}d} \PYG{o}{=} \PYG{n+nb}{float}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{inf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n}{in\PYGZus{}tree}\PYG{p}{:}
+            \PYG{k}{for} \PYG{n}{j} \PYG{o+ow}{in} \PYG{n}{remaining}\PYG{p}{:}
+                \PYG{n}{d} \PYG{o}{=} \PYG{n}{distance\PYGZus{}func}\PYG{p}{(}\PYG{n}{points}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{p}{,} \PYG{n}{points}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{p}{)}
+                \PYG{k}{if} \PYG{n}{d} \PYG{o}{\PYGZlt{}} \PYG{n}{best\PYGZus{}d}\PYG{p}{:}
+                    \PYG{n}{best\PYGZus{}d} \PYG{o}{=} \PYG{n}{d}
+                    \PYG{n}{best} \PYG{o}{=} \PYG{n}{j}
+        \PYG{n}{total} \PYG{o}{+}\PYG{o}{=} \PYG{n}{best\PYGZus{}d}
+        \PYG{n}{in\PYGZus{}tree}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{n}{best}\PYG{p}{)}
+        \PYG{n}{remaining}\PYG{o}{.}\PYG{n}{remove}\PYG{p}{(}\PYG{n}{best}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{total}
+\end{MintedVerbatim}

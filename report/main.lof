@@ -1,0 +1,17 @@
+\babel@toc {vietnamese}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Minh họa bài toán tìm đường đi}}{5}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Minh họa ví dụ tìm đường ngắn nhất từ S đến G trong đồ thị. Nguồn: \blx@tocontentsinit {0}\textcite {spacedev_astar}}}{8}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Lời giải của thuật toán Astar trong đồ thị. Nguồn: \blx@tocontentsinit {0}\textcite {spacedev_astar}}}{9}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Minh họa các hàm Heuristic. Nguồn: \blx@tocontentsinit {0}\textcite {opengenus_distance}}}{10}{figure.caption.10}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Khởi tạo lưới 5x5}}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Robot di chuyển đến ô (1,1)}}{23}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Dò các hướng đi khác}}{23}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Di chuyển đến (2,1)}}{24}{figure.caption.29}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Kết quả Astar Chebyshev thí nghiệm 1}}{26}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Kết quả Astar Chebyshev thí nghiệm 2}}{27}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kết quả Astar Chebyshev thí nghiệm 3}}{28}{figure.caption.35}%
+\addvspace {10\p@ }

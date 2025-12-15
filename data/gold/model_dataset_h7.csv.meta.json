@@ -1,0 +1,88 @@
+{
+  "output_csv": "data/gold/model_dataset_h7.csv",
+  "generated_at": "2025-12-15T12:41:14.041029",
+  "spec": {
+    "horizon_days": 7,
+    "ret_lookback_5d": 5,
+    "vol_window": 20,
+    "atr_window": 14,
+    "vol_ma_window": 20,
+    "sentiment_lookback_days": 7,
+    "fund_lag_quarters": 1,
+    "macro_lag_quarters": 1
+  },
+  "rows_out": 93298,
+  "symbols": 30,
+  "date_range": {
+    "min": "2006-02-23",
+    "max": "2025-12-01"
+  },
+  "rows_by_symbol_top10": [
+    [
+      "VNM",
+      4934
+    ],
+    [
+      "STB",
+      4817
+    ],
+    [
+      "ACB",
+      4722
+    ],
+    [
+      "FPT",
+      4708
+    ],
+    [
+      "SSI",
+      4696
+    ],
+    [
+      "VIC",
+      4520
+    ],
+    [
+      "HPG",
+      4479
+    ],
+    [
+      "SHB",
+      4129
+    ],
+    [
+      "VCB",
+      4083
+    ],
+    [
+      "CTG",
+      4071
+    ]
+  ],
+  "columns": [
+    "date",
+    "symbol",
+    "y_future_return",
+    "close",
+    "ret_1d",
+    "ret_5d",
+    "vol_20d",
+    "atr_14",
+    "avg_vol_20d",
+    "vol_z_20d",
+    "sent_7d",
+    "sent_rel_7d",
+    "sent_n_7d",
+    "fund_year",
+    "fund_quarter",
+    "fund_roe",
+    "fund_roa",
+    "fund_p_e",
+    "fund_p_b",
+    "macro_inf",
+    "macro_gdp",
+    "macro_dc",
+    "fx_ret_5d"
+  ],
+  "notes": "y_future_return uses trading-day shift per symbol; fundamentals/macro lag are applied by quarter index."
+}

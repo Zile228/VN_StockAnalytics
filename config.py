@@ -34,11 +34,13 @@ DATA_RAW_DIR = BASE_DIR / "data" / "bronze"
 DATA_PROCESSED_DIR = BASE_DIR / "data" / "silver"
 DATA_TIMESERIES_DIR = BASE_DIR / "data" / "timeseries"
 OUTPUT_DIR = BASE_DIR / "output"
+DATA_GOLD_DIR = BASE_DIR / "data" / "gold"
 
 # Ensure folders exist
 os.makedirs(DATA_RAW_DIR, exist_ok=True)
 os.makedirs(DATA_PROCESSED_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(DATA_GOLD_DIR, exist_ok=True)
 
 # --- CONSTANTS ---
 VN30_TICKERS = [
@@ -53,3 +55,19 @@ NEWS_MERGED_CSV = DATA_RAW_DIR / "VN30_Merged_News.csv"
 SENTIMENT_ANALYZED_CSV = DATA_PROCESSED_DIR / "VN30_Sentiment_Analyzed.csv"
 MACRO_XLSX = DATA_TIMESERIES_DIR / "macro.xlsx"
 USDVND_CSV = DATA_TIMESERIES_DIR / "Dữ-liệu-Lịch-sử-USD_VND-1.csv"
+BANK_XLSX = DATA_TIMESERIES_DIR / "bank.xlsx"
+
+# Gold (canonical) outputs
+USDVND_GOLD_CSV = DATA_GOLD_DIR / "usdvnd_daily.csv"
+VN30_HISTORY_CLEAN_CSV = DATA_GOLD_DIR / "vn30_history_clean.csv"
+FUNDAMENTALS_LONG_CSV = DATA_GOLD_DIR / "fundamentals_long.csv"
+MODEL_DATASET_H7_CSV = DATA_GOLD_DIR / "model_dataset_h7.csv"
+MODEL_DATASET_H7_META_JSON = DATA_GOLD_DIR / "model_dataset_h7.csv.meta.json"
+
+# --- Model artifacts (Colab exports) ---
+MODELS_DIR = BASE_DIR / "models"
+ARTIFACTS_H7_DIR = MODELS_DIR / "artifacts_h7"
+VAL_PREDICTIONS_CSV = ARTIFACTS_H7_DIR / "val_predictions.csv"
+FEATURE_COLS_JSON = ARTIFACTS_H7_DIR / "feature_cols.json"
+SCALER_JOBLIB = ARTIFACTS_H7_DIR / "scaler.joblib"
+BILSTM_PT = ARTIFACTS_H7_DIR / "bilstm.pt"

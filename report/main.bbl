@@ -1,0 +1,779 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global/global}
+    \entry{dantzig1954tsp}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=212fe65a17e797b6dbce0c3731498b2c}{%
+           family={Dantzig},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima B.},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba1fea9115ddfe901b2488bf0b526451}{%
+           family={Fulkerson},
+           familyi={F\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56e522b249b2b36a540c05054444f388}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Selmer\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{db24aef3794a6ed2aadaaeed19d212fc}
+      \strng{fullhash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{fullhashraw}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{bibnamehash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authorbibnamehash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authornamehash}{db24aef3794a6ed2aadaaeed19d212fc}
+      \strng{authorfullhash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authorfullhashraw}{81f1671ddbc95d2397383eb03b0222d7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Operations Research}
+      \field{number}{4}
+      \field{title}{Solution of a Large-Scale Traveling-Salesman Problem}
+      \field{volume}{2}
+      \field{year}{1954}
+      \field{pages}{393\bibrangedash 410}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1287/opre.2.4.393
+      \endverb
+    \endentry
+    \entry{dijkstra1959note}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2066778d476d4368455cb8e3ba6d03b4}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={Edsger\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{fullhash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{fullhashraw}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{bibnamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorbibnamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authornamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorfullhash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorfullhashraw}{2066778d476d4368455cb8e3ba6d03b4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Numerische Mathematik}
+      \field{title}{A Note on Two Problems in Connexion with Graphs}
+      \field{volume}{1}
+      \field{year}{1959}
+      \field{pages}{269\bibrangedash 271}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1007/BF01386390
+      \endverb
+    \endentry
+    \entry{felner2011heuristic}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=090820c15422fa559364ad660e9cecbd}{%
+           family={Felner},
+           familyi={F\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{fullhash}{090820c15422fa559364ad660e9cecbd}
+      \strng{fullhashraw}{090820c15422fa559364ad660e9cecbd}
+      \strng{bibnamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorbibnamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authornamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorfullhash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorfullhashraw}{090820c15422fa559364ad660e9cecbd}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI Communications}
+      \field{number}{1}
+      \field{title}{Position paper: Applying A* in the real world}
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{3\bibrangedash 17}
+      \range{pages}{15}
+    \endentry
+    \entry{hart1968formal}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9ce6ce2ae6a0f1ac64e4efe810d622c}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91c95ed3e3f572f27346b1131492bb8b}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Nils\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253a4de6b29f96e30136e368e9af44d0}{%
+           family={Raphael},
+           familyi={R\bibinitperiod},
+           given={Bertram},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b35b431c66f339a96f1c860ebb48252f}
+      \strng{fullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{fullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{bibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorbibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authornamehash}{b35b431c66f339a96f1c860ebb48252f}
+      \strng{authorfullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorfullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems Science and Cybernetics}
+      \field{number}{2}
+      \field{title}{A formal basis for the heuristic determination of minimum cost paths}
+      \field{volume}{4}
+      \field{year}{1968}
+      \field{pages}{100\bibrangedash 107}
+      \range{pages}{8}
+    \endentry
+    \entry{opengenus_distance}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0fbe340e33afc0ce23650796e22f8df3}{%
+           family={IQ},
+           familyi={I\bibinitperiod},
+           given={OpenGenus},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{fullhash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{fullhashraw}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{bibnamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorbibnamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authornamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorfullhash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorfullhashraw}{0fbe340e33afc0ce23650796e22f8df3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Euclidean vs Manhattan vs Chebyshev distance}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iq.opengenus.org/euclidean-vs-manhattan-vs-chebyshev-distance/
+      \endverb
+      \verb{url}
+      \verb https://iq.opengenus.org/euclidean-vs-manhattan-vs-chebyshev-distance/
+      \endverb
+    \endentry
+    \entry{lavalle2006planning}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=10b09a560dbab6229987301f9a193d77}{%
+           family={LaValle},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, UK}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{fullhash}{10b09a560dbab6229987301f9a193d77}
+      \strng{fullhashraw}{10b09a560dbab6229987301f9a193d77}
+      \strng{bibnamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorbibnamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authornamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorfullhash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorfullhashraw}{10b09a560dbab6229987301f9a193d77}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521862059}
+      \field{title}{Planning Algorithms}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb http://lavalle.pl/planning/
+      \endverb
+      \verb{url}
+      \verb http://lavalle.pl/planning/
+      \endverb
+    \endentry
+    \entry{pearl1984heuristics}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{fullhash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{fullhashraw}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{bibnamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorbibnamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authornamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorfullhash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorfullhashraw}{809f695b398afbb54b544c49e8d1bbbb}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Heuristics: Intelligent Search Strategies for Computer Problem Solving}
+      \field{year}{1984}
+    \endentry
+    \entry{russell2022ai}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=143fa183327d9fcd9de18eec99d6ca97}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhashraw}{b280605b721b4ebcba5395298499f924}
+      \strng{bibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorbibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authornamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhashraw}{b280605b721b4ebcba5395298499f924}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artificial Intelligence: A Modern Approach}
+      \field{year}{2022}
+    \endentry
+    \entry{spacedev_astar}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=78c0047e7d6e23d93a2fad028cf97fe9}{%
+           family={SpaceDev},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{fullhash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{fullhashraw}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{bibnamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorbibnamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authornamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorfullhash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorfullhashraw}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thuật toán A* (A-star Algorithm)}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spacedev.vn/resources/docs/ai/search-algorithms/a-search
+      \endverb
+      \verb{url}
+      \verb https://spacedev.vn/resources/docs/ai/search-algorithms/a-search
+      \endverb
+    \endentry
+    \entry{sutton2018reinforcement}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=eb920e5277d3d5fd0903f3cd41e11871}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32a0a208f8bcf56a13b0a8e618aa806a}{%
+           family={Barto},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{bibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorbibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authornamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reinforcement Learning: An Introduction}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global/global}
+    \entry{dantzig1954tsp}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=212fe65a17e797b6dbce0c3731498b2c}{%
+           family={Dantzig},
+           familyi={D\bibinitperiod},
+           given={George\bibnamedelima B.},
+           giveni={G\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba1fea9115ddfe901b2488bf0b526451}{%
+           family={Fulkerson},
+           familyi={F\bibinitperiod},
+           given={Ray},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56e522b249b2b36a540c05054444f388}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Selmer\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {INFORMS}%
+      }
+      \strng{namehash}{db24aef3794a6ed2aadaaeed19d212fc}
+      \strng{fullhash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{fullhashraw}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{bibnamehash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authorbibnamehash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authornamehash}{db24aef3794a6ed2aadaaeed19d212fc}
+      \strng{authorfullhash}{81f1671ddbc95d2397383eb03b0222d7}
+      \strng{authorfullhashraw}{81f1671ddbc95d2397383eb03b0222d7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Operations Research}
+      \field{number}{4}
+      \field{title}{Solution of a Large-Scale Traveling-Salesman Problem}
+      \field{volume}{2}
+      \field{year}{1954}
+      \field{pages}{393\bibrangedash 410}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1287/opre.2.4.393
+      \endverb
+    \endentry
+    \entry{dijkstra1959note}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2066778d476d4368455cb8e3ba6d03b4}{%
+           family={Dijkstra},
+           familyi={D\bibinitperiod},
+           given={Edsger\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{fullhash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{fullhashraw}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{bibnamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorbibnamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authornamehash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorfullhash}{2066778d476d4368455cb8e3ba6d03b4}
+      \strng{authorfullhashraw}{2066778d476d4368455cb8e3ba6d03b4}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Numerische Mathematik}
+      \field{title}{A Note on Two Problems in Connexion with Graphs}
+      \field{volume}{1}
+      \field{year}{1959}
+      \field{pages}{269\bibrangedash 271}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1007/BF01386390
+      \endverb
+    \endentry
+    \entry{felner2011heuristic}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=090820c15422fa559364ad660e9cecbd}{%
+           family={Felner},
+           familyi={F\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{fullhash}{090820c15422fa559364ad660e9cecbd}
+      \strng{fullhashraw}{090820c15422fa559364ad660e9cecbd}
+      \strng{bibnamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorbibnamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authornamehash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorfullhash}{090820c15422fa559364ad660e9cecbd}
+      \strng{authorfullhashraw}{090820c15422fa559364ad660e9cecbd}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI Communications}
+      \field{number}{1}
+      \field{title}{Position paper: Applying A* in the real world}
+      \field{volume}{24}
+      \field{year}{2011}
+      \field{pages}{3\bibrangedash 17}
+      \range{pages}{15}
+    \endentry
+    \entry{hart1968formal}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a9ce6ce2ae6a0f1ac64e4efe810d622c}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Peter\bibnamedelima E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=91c95ed3e3f572f27346b1131492bb8b}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Nils\bibnamedelima J.},
+           giveni={N\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=253a4de6b29f96e30136e368e9af44d0}{%
+           family={Raphael},
+           familyi={R\bibinitperiod},
+           given={Bertram},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b35b431c66f339a96f1c860ebb48252f}
+      \strng{fullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{fullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{bibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorbibnamehash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authornamehash}{b35b431c66f339a96f1c860ebb48252f}
+      \strng{authorfullhash}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \strng{authorfullhashraw}{9a03bc90212dd8a91661d34cb6ae8c15}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems Science and Cybernetics}
+      \field{number}{2}
+      \field{title}{A formal basis for the heuristic determination of minimum cost paths}
+      \field{volume}{4}
+      \field{year}{1968}
+      \field{pages}{100\bibrangedash 107}
+      \range{pages}{8}
+    \endentry
+    \entry{opengenus_distance}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0fbe340e33afc0ce23650796e22f8df3}{%
+           family={IQ},
+           familyi={I\bibinitperiod},
+           given={OpenGenus},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{fullhash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{fullhashraw}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{bibnamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorbibnamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authornamehash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorfullhash}{0fbe340e33afc0ce23650796e22f8df3}
+      \strng{authorfullhashraw}{0fbe340e33afc0ce23650796e22f8df3}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Euclidean vs Manhattan vs Chebyshev distance}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://iq.opengenus.org/euclidean-vs-manhattan-vs-chebyshev-distance/
+      \endverb
+      \verb{url}
+      \verb https://iq.opengenus.org/euclidean-vs-manhattan-vs-chebyshev-distance/
+      \endverb
+    \endentry
+    \entry{lavalle2006planning}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=10b09a560dbab6229987301f9a193d77}{%
+           family={LaValle},
+           familyi={L\bibinitperiod},
+           given={Steven\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, UK}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{fullhash}{10b09a560dbab6229987301f9a193d77}
+      \strng{fullhashraw}{10b09a560dbab6229987301f9a193d77}
+      \strng{bibnamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorbibnamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authornamehash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorfullhash}{10b09a560dbab6229987301f9a193d77}
+      \strng{authorfullhashraw}{10b09a560dbab6229987301f9a193d77}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0521862059}
+      \field{title}{Planning Algorithms}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb http://lavalle.pl/planning/
+      \endverb
+      \verb{url}
+      \verb http://lavalle.pl/planning/
+      \endverb
+    \endentry
+    \entry{pearl1984heuristics}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{fullhash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{fullhashraw}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{bibnamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorbibnamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authornamehash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorfullhash}{809f695b398afbb54b544c49e8d1bbbb}
+      \strng{authorfullhashraw}{809f695b398afbb54b544c49e8d1bbbb}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Heuristics: Intelligent Search Strategies for Computer Problem Solving}
+      \field{year}{1984}
+    \endentry
+    \entry{russell2022ai}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=143fa183327d9fcd9de18eec99d6ca97}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5de798d5fa3c0236c0478134cd23f52a}{%
+           family={Norvig},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson}%
+      }
+      \strng{namehash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{fullhashraw}{b280605b721b4ebcba5395298499f924}
+      \strng{bibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorbibnamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authornamehash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhash}{b280605b721b4ebcba5395298499f924}
+      \strng{authorfullhashraw}{b280605b721b4ebcba5395298499f924}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artificial Intelligence: A Modern Approach}
+      \field{year}{2022}
+    \endentry
+    \entry{spacedev_astar}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=78c0047e7d6e23d93a2fad028cf97fe9}{%
+           family={SpaceDev},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{fullhash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{fullhashraw}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{bibnamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorbibnamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authornamehash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorfullhash}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \strng{authorfullhashraw}{78c0047e7d6e23d93a2fad028cf97fe9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thuật toán A* (A-star Algorithm)}
+      \field{urlday}{24}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://spacedev.vn/resources/docs/ai/search-algorithms/a-search
+      \endverb
+      \verb{url}
+      \verb https://spacedev.vn/resources/docs/ai/search-algorithms/a-search
+      \endverb
+    \endentry
+    \entry{sutton2018reinforcement}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=eb920e5277d3d5fd0903f3cd41e11871}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32a0a208f8bcf56a13b0a8e618aa806a}{%
+           family={Barto},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{bibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorbibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authornamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhashraw}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reinforcement Learning: An Introduction}
+      \field{year}{2018}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

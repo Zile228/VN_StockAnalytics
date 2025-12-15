@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{initial\PYGZus{}state}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{x0}\PYG{p}{,} \PYG{n}{y0} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{grid}\PYG{o}{.}\PYG{n}{start}
+    \PYG{n}{mask} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{pos} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{mask} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{set\PYGZus{}bit}\PYG{p}{(}\PYG{n}{mask}\PYG{p}{,} \PYG{n}{i}\PYG{p}{)}
+    \PYG{k}{return} \PYG{p}{(}\PYG{n}{x0}\PYG{p}{,} \PYG{n}{y0}\PYG{p}{,} \PYG{n}{mask}\PYG{p}{)}
+\end{MintedVerbatim}

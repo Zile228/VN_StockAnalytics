@@ -1,0 +1,606 @@
+{
+  "generated_at": "2025-12-15T12:21:45.557355",
+  "datasets": {
+    "vn30_history": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/timeseries/vn30_history.csv",
+      "rows_by_symbol": {
+        "ACB": {
+          "n": 4749,
+          "min_date": "2006-11-21",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "BCM": {
+          "n": 1946,
+          "min_date": "2018-02-21",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "BID": {
+          "n": 2964,
+          "min_date": "2014-01-24",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "CTG": {
+          "n": 4098,
+          "min_date": "2009-07-16",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "DGC": {
+          "n": 2817,
+          "min_date": "2014-08-26",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "FPT": {
+          "n": 4735,
+          "min_date": "2006-12-13",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "GAS": {
+          "n": 3389,
+          "min_date": "2012-05-21",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "GVR": {
+          "n": 1927,
+          "min_date": "2018-03-21",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "HDB": {
+          "n": 1981,
+          "min_date": "2018-01-05",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "HPG": {
+          "n": 4506,
+          "min_date": "2007-11-15",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "LPB": {
+          "n": 2036,
+          "min_date": "2017-10-05",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "MBB": {
+          "n": 3524,
+          "min_date": "2011-11-01",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "MSN": {
+          "n": 4019,
+          "min_date": "2009-11-05",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "MWG": {
+          "n": 2854,
+          "min_date": "2014-07-14",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "PLX": {
+          "n": 2162,
+          "min_date": "2017-04-21",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "SAB": {
+          "n": 2253,
+          "min_date": "2016-12-06",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "SHB": {
+          "n": 4156,
+          "min_date": "2009-04-20",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "SSB": {
+          "n": 1180,
+          "min_date": "2021-03-24",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "SSI": {
+          "n": 4723,
+          "min_date": "2006-12-15",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "STB": {
+          "n": 4844,
+          "min_date": "2006-07-12",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "TCB": {
+          "n": 1883,
+          "min_date": "2018-06-04",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "TPB": {
+          "n": 1912,
+          "min_date": "2018-04-19",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VCB": {
+          "n": 4110,
+          "min_date": "2009-06-30",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VHM": {
+          "n": 3307,
+          "min_date": "2011-11-10",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VIB": {
+          "n": 2223,
+          "min_date": "2017-01-09",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VIC": {
+          "n": 4547,
+          "min_date": "2007-09-19",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VJC": {
+          "n": 2199,
+          "min_date": "2017-02-28",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VNM": {
+          "n": 4961,
+          "min_date": "2006-01-19",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VPB": {
+          "n": 2080,
+          "min_date": "2017-08-17",
+          "max_date": "2025-12-10",
+          "dups": 0
+        },
+        "VRE": {
+          "n": 2024,
+          "min_date": "2017-11-06",
+          "max_date": "2025-12-10",
+          "dups": 0
+        }
+      },
+      "symbol_count": 30,
+      "total_rows": 94109,
+      "bad_rows": 0,
+      "anomalies": {
+        "high_lt_max_open_close": 13,
+        "low_gt_min_open_close": 27,
+        "non_positive_close": 1
+      }
+    },
+    "news_bronze": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/bronze/VN30_Merged_News.csv",
+      "total_rows": 22,
+      "unique_symbols": 14,
+      "time_range": {
+        "min": "2025-12-08T08:30:00",
+        "max": "2025-12-10T16:33:00"
+      },
+      "bad_datetime_rows": 0,
+      "multi_symbol_rows": 0,
+      "missing_fields": {},
+      "top_symbols": [
+        [
+          "VIC",
+          4
+        ],
+        [
+          "FPT",
+          3
+        ],
+        [
+          "HDB",
+          2
+        ],
+        [
+          "TCB",
+          2
+        ],
+        [
+          "TPB",
+          2
+        ],
+        [
+          "ACB",
+          1
+        ],
+        [
+          "GAS",
+          1
+        ],
+        [
+          "SAB",
+          1
+        ],
+        [
+          "SHB",
+          1
+        ],
+        [
+          "SSB",
+          1
+        ]
+      ]
+    },
+    "sentiment_silver": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/silver/VN30_Sentiment_Analyzed.csv",
+      "total_rows": 22,
+      "unique_symbols": 14,
+      "time_range": {
+        "min": "2025-12-08T08:30:00",
+        "max": "2025-12-10T16:33:00"
+      },
+      "bad_datetime_rows": 0,
+      "missing_fields": {},
+      "bad_numeric": {},
+      "top_symbols": [
+        [
+          "VIC",
+          4
+        ],
+        [
+          "FPT",
+          3
+        ],
+        [
+          "HDB",
+          2
+        ],
+        [
+          "TCB",
+          2
+        ],
+        [
+          "TPB",
+          2
+        ],
+        [
+          "ACB",
+          1
+        ],
+        [
+          "GAS",
+          1
+        ],
+        [
+          "SAB",
+          1
+        ],
+        [
+          "SHB",
+          1
+        ],
+        [
+          "SSB",
+          1
+        ]
+      ],
+      "model_used_counts": [
+        [
+          "Groq-8B",
+          21
+        ],
+        [
+          "Groq-70B",
+          1
+        ]
+      ]
+    },
+    "macro": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/timeseries/macro.xlsx",
+      "exists": true,
+      "sheets": [
+        "Sheet1"
+      ],
+      "rows": 20,
+      "missing_expected_columns": [],
+      "parsed_rows": 20,
+      "bad_rows": 0,
+      "ranges": {
+        "INF": {
+          "min": 0.0067,
+          "max": 0.0499
+        },
+        "GDP": {
+          "min": 0.014199999999999999,
+          "max": 0.0883
+        },
+        "DC": {
+          "min": 0.09269999999999999,
+          "max": 0.16940000000000002
+        }
+      }
+    },
+    "usdvnd": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/timeseries/Dữ-liệu-Lịch-sử-USD_VND-1.csv",
+      "exists": true,
+      "rows": 1552,
+      "date_range": {
+        "min": "2020-01-01",
+        "max": "2025-12-10"
+      },
+      "bad_date_rows": 0,
+      "bad_close_rows": 0,
+      "ranges": {
+        "close": {
+          "min": 22625.0,
+          "max": 26432.5
+        },
+        "pct_change": {
+          "min": -0.0152,
+          "max": 0.0118
+        }
+      }
+    },
+    "bank": {
+      "file": "/Users/anhoaithai/Documents/AHT/2. AREAS/UEH/Kì 5/Data Mining/Project/Vile/VN_StockAnalytics/data/timeseries/bank.xlsx",
+      "exists": true,
+      "sheets": [
+        "ratio",
+        "balance_sheet",
+        "income_statement",
+        "cash_flow"
+      ],
+      "per_sheet": {
+        "ratio": {
+          "rows": 697,
+          "columns": [
+            "Meta",
+            "Meta.1",
+            "Meta.2",
+            "Chỉ tiêu cơ cấu nguồn vốn.1",
+            "Chỉ tiêu cơ cấu nguồn vốn.2",
+            "Chỉ tiêu cơ cấu nguồn vốn.3",
+            "Chỉ tiêu khả năng sinh lợi.2",
+            "Chỉ tiêu khả năng sinh lợi.3",
+            "Chỉ tiêu khả năng sinh lợi.5",
+            "Chỉ tiêu thanh khoản.4",
+            "Chỉ tiêu định giá",
+            "Chỉ tiêu định giá.1",
+            "Chỉ tiêu định giá.2",
+            "Chỉ tiêu định giá.3",
+            "Chỉ tiêu định giá.4",
+            "Chỉ tiêu định giá.5",
+            "Chỉ tiêu định giá.6",
+            "Chỉ tiêu định giá.7"
+          ],
+          "unique_symbols": null,
+          "top_symbols": null,
+          "bad": {}
+        },
+        "balance_sheet": {
+          "rows": 696,
+          "columns": [
+            "CP",
+            "Năm",
+            "Kỳ",
+            "TỔNG CỘNG TÀI SẢN (đồng)",
+            "Tiền và tương đương tiền (đồng)",
+            "Tiền gửi tại ngân hàng nhà nước Việt Nam",
+            "Tiền gửi tại các TCTD khác và cho vay các TCTD khác",
+            "Chứng khoán kinh doanh",
+            "_Chứng khoán kinh doanh",
+            "Dự phòng giảm giá chứng khoán kinh doanh",
+            "Các công cụ tài chính phái sinh và khoản nợ tài chính khác",
+            "Cho vay khách hàng",
+            "_Cho vay khách hàng",
+            "Dự phòng rủi ro cho vay khách hàng",
+            "Chứng khoán đầu tư",
+            "Chứng khoán đầu tư sẵn sàng để bán",
+            "Chứng khoán đầu tư giữ đến ngày đáo hạn",
+            "Dự phòng giảm giá chứng khoán đầu tư",
+            "Đầu tư dài hạn (đồng)",
+            "Đầu tư vào công ty con",
+            "Đầu tư vào công ty liên doanh",
+            "Tài sản dài hạn khác (đồng)",
+            "Dự phòng giảm giá đầu tư dài hạn",
+            "Tài sản cố định (đồng)",
+            "Tài sản cố định hữu hình",
+            "Tài sản cố định thuê tài chính",
+            "Tài sản cố định vô hình",
+            "Giá trị ròng tài sản đầu tư",
+            "Tài sản Có khác",
+            "TỔNG CỘNG NGUỒN VỐN (đồng)",
+            "NỢ PHẢI TRẢ (đồng)",
+            "Các khoản nợ chính phủ và NHNN Việt Nam",
+            "Tiền gửi và vay các Tổ chức tín dụng khác",
+            "Tiền gửi của khách hàng",
+            "_Các công cụ tài chính phái sinh và khoản nợ tài chính khác",
+            "Vốn tài trợ, uỷ thác đầu tư của CP và các tổ chức TD khác",
+            "Phát hành giấy tờ có giá",
+            "Các khoản nợ khác",
+            "VỐN CHỦ SỞ HỮU (đồng)",
+            "Vốn của tổ chức tín dụng",
+            "Quỹ của tổ chức tín dụng",
+            "Chênh lệch tỷ giá hối đoái",
+            "Chênh lệch đánh giá lại tài sản",
+            "Lãi chưa phân phối (đồng)",
+            "Vốn góp của chủ sở hữu (đồng)",
+            "Các quỹ khác",
+            "LỢI ÍCH CỦA CỔ ĐÔNG THIỂU SỐ"
+          ],
+          "unique_symbols": 14,
+          "top_symbols": [
+            [
+              "MBB",
+              57
+            ],
+            [
+              "CTG",
+              54
+            ],
+            [
+              "ACB",
+              51
+            ],
+            [
+              "BID",
+              51
+            ],
+            [
+              "SHB",
+              51
+            ],
+            [
+              "STB",
+              51
+            ],
+            [
+              "TCB",
+              51
+            ],
+            [
+              "VCB",
+              51
+            ],
+            [
+              "VIB",
+              51
+            ],
+            [
+              "VPB",
+              51
+            ]
+          ],
+          "bad": {}
+        },
+        "income_statement": {
+          "rows": 1047854,
+          "columns": [
+            "CP",
+            "Năm",
+            "Kỳ",
+            "Doanh thu (đồng)",
+            "Lợi nhuận sau thuế của Cổ đông công ty mẹ (đồng)",
+            "Thu nhập lãi và các khoản tương tự",
+            "Chi phí lãi và các khoản tương tự",
+            "Thu nhập lãi thuần",
+            "Thu nhập từ hoạt động dịch vụ",
+            "Chi phí hoạt động dịch vụ",
+            "Lãi thuần từ hoạt động dịch vụ",
+            "Kinh doanh ngoại hối và vàng",
+            "Chứng khoán kinh doanh",
+            "Chứng khoán đầu tư",
+            "Hoạt động khác",
+            "Chi phí hoạt động khác",
+            "Lãi/lỗ thuần từ hoạt động khác",
+            "Cố tức đã nhận",
+            "Tổng thu nhập hoạt động",
+            "Chi phí quản lý DN",
+            "LN từ HĐKD trước CF dự phòng",
+            "Chi phí dự phòng rủi ro tín dụng",
+            "LN trước thuế",
+            "Thuế TNDN",
+            "Chi phí thuế TNDN hiện hành",
+            "Chi phí thuế TNDN hoãn lại",
+            "Cổ đông thiểu số",
+            "Lợi nhuận thuần",
+            "Cổ đông của Công ty mẹ"
+          ],
+          "unique_symbols": 14,
+          "top_symbols": [
+            [
+              "MBB",
+              57
+            ],
+            [
+              "CTG",
+              54
+            ],
+            [
+              "ACB",
+              51
+            ],
+            [
+              "BID",
+              51
+            ],
+            [
+              "SHB",
+              51
+            ],
+            [
+              "STB",
+              51
+            ],
+            [
+              "TCB",
+              51
+            ],
+            [
+              "VCB",
+              51
+            ],
+            [
+              "VIB",
+              51
+            ],
+            [
+              "VPB",
+              51
+            ]
+          ],
+          "bad": {
+            "missing_symbol": 1047158,
+            "missing_Năm": 1047158,
+            "missing_Kỳ": 1047158
+          }
+        },
+        "cash_flow": {
+          "rows": 696,
+          "columns": [
+            "ticker",
+            "yearReport",
+            "lengthReport",
+            "Profits from other activities",
+            "Operating profit before changes in working capital",
+            "Net Cash Flows from Operating Activities before BIT",
+            "Payment from reserves",
+            "Purchase of fixed assets",
+            "Gain on Dividend",
+            "Net Cash Flows from Investing Activities",
+            "Cash flows from financial activities",
+            "Net increase/decrease in cash and cash equivalents",
+            "Cash and cash equivalents",
+            "Foreign exchange differences Adjustment",
+            "Cash and Cash Equivalents at the end of period",
+            "Net cash inflows/outflows from operating activities",
+            "Proceeds from disposal of fixed assets",
+            "Investment in other entities",
+            "Proceeds from divestment in other entities",
+            "Dividends paid"
+          ],
+          "unique_symbols": null,
+          "top_symbols": null,
+          "bad": {}
+        }
+      }
+    }
+  }
+}

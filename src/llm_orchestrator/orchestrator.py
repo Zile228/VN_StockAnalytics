@@ -19,6 +19,7 @@ from src.data_access.features import (
     uncertainty_band_from_vol,
 )
 from src.data_access.news import aggregate_recent_sentiment, pick_recent_news_evidence
+from src.data_access.fundamental_features import fundamentals_boost, latest_fundamentals_snapshot
 from src.data_access.mock_portfolio import Portfolio
 from src.llm_orchestrator.schema import RecommendationOutput, RecommendedAction, UncertaintyBand
 from src.llm_orchestrator.tools import DisabledLLMClient, LLMClient, LocalFileTools, deterministic_model_quality
@@ -76,7 +77,15 @@ class Orchestrator:
         self._llm = llm or DisabledLLMClient()
         self._gating_cfg = gating_cfg or GatingConfig()
 
-    def recommend(self, *, user_id: str, horizon_days: int, top_n: int) -> RecommendationOutput:
+    def recommend(
+        self,
+        *,
+        user_id: str,
+        horizon_days: int,
+        top_n: int,
+        fund_lag_quarters: int = 0,
+        forecast_source: str = "stub",
+    ) -> RecommendationOutput:
         portfolio: Portfolio = self._tools.get_portfolio(user_id)
         history = self._tools.load_history()
         if not history:
@@ -94,14 +103,35 @@ class Orchestrator:
         # Optional macro/usd-vnd evidence (portfolio-level)
         macro = self._tools.load_macro()
         usdvnd = self._tools.load_usdvnd()
+        fundamentals = self._tools.load_fundamentals_long()
+        fundamentals_snap = latest_fundamentals_snapshot(
+            fundamentals,
+            asof_date=asof.date(),
+            lag_quarters=int(fund_lag_quarters),
+            preferred_metrics=["roe", "roa", "p_e", "p_b", "eps_vnd", "bvps_vnd"],
+        )
+
+        # Optional model forecast bundle (from artifacts)
+        forecast_bundle: Dict[str, dict] = {}
+        if str(forecast_source).lower() == "artifacts":
+            forecast_bundle = self._tools.load_forecast_bundle(asof_date=asof.date(), horizon_days=int(horizon_days))
 
         # Build forecast stub candidates deterministically
         candidates: List[Candidate] = []
         for sym, f in feats.items():
             sboost = _sentiment_to_return_boost(sent_agg[sym].avg_score) if sym in sent_agg else 0.0
-            expected_return = 0.8 * f.return_5d + 0.2 * sboost
+            fboost = fundamentals_boost(fundamentals_snap.get(sym))
+            # Forecast source selection:
+            # - stub: momentum + sentiment + fundamentals (weak)
+            # - artifacts: model expected_return overrides (still deterministic); we keep small blend from other signals
+            if forecast_bundle and sym in forecast_bundle:
+                model_er = float(forecast_bundle[sym].get("expected_return", 0.0))
+                expected_return = 0.85 * model_er + 0.10 * sboost + 0.05 * fboost
+                mq = float(forecast_bundle[sym].get("model_quality", deterministic_model_quality(sym)))
+            else:
+                expected_return = 0.75 * f.return_5d + 0.20 * sboost + 0.05 * fboost
+                mq = deterministic_model_quality(sym)
             risk = float(f.realized_vol_20d) * math.sqrt(max(1.0, float(horizon_days)))
-            mq = deterministic_model_quality(sym)
             candidates.append(
                 Candidate(
                     symbol=sym,
@@ -112,6 +142,8 @@ class Orchestrator:
                     reasons=[
                         f"features: return_5d={f.return_5d:.4f}, vol20d={f.realized_vol_20d:.4f}, atr14={f.atr_14:.4f}, avg_vol20d={f.avg_volume_20d:.0f}",
                         f"sentiment_boost={sboost:.4f}",
+                        f"fundamentals_boost={fboost:.4f} (lag_quarters={int(fund_lag_quarters)})",
+                        f"forecast_source={forecast_source}",
                     ],
                 )
             )
@@ -139,12 +171,27 @@ class Orchestrator:
             if c is None:
                 continue
             spread_proxy = spread_proxy_from_liquidity_and_vol(f.avg_volume_20d, f.realized_vol_20d)
-            p10, p50, p90 = uncertainty_band_from_vol(c.expected_return, f.realized_vol_20d, horizon_days)
+            # If model bundle provides uncertainty sigma, prefer it; otherwise use realized vol.
+            if forecast_bundle and sym in forecast_bundle and forecast_bundle[sym].get("uncertainty_sigma") is not None:
+                sigma = float(forecast_bundle[sym].get("uncertainty_sigma"))
+                # approximate uncertainty scaling by sqrt(horizon)
+                scale = sigma * math.sqrt(max(1.0, float(horizon_days)))
+                p50 = c.expected_return
+                p10 = c.expected_return - 1.2816 * scale
+                p90 = c.expected_return + 1.2816 * scale
+                p10, p50, p90 = float(p10), float(p50), float(p90)
+            else:
+                p10, p50, p90 = uncertainty_band_from_vol(c.expected_return, f.realized_vol_20d, horizon_days)
 
             # Deterministic evidence strings
             evidence: List[str] = []
             evidence.append(f"[{sym}] Price asof={asof.date().isoformat()} close={f.last_close:.2f}")
             evidence.append(f"[{sym}] Momentum 5d={f.return_5d:.4f}; vol20d={f.realized_vol_20d:.4f}; ATR14={f.atr_14:.4f}")
+            if sym in fundamentals_snap and fundamentals_snap[sym].metrics:
+                snap = fundamentals_snap[sym]
+                # Keep evidence short and UI-friendly
+                kv = ", ".join([f"{k}={v:.4g}" for k, v in list(snap.metrics.items())[:6]])
+                evidence.append(f"[{sym}] Fundamentals (Y{snap.year}Q{snap.quarter}): {kv}")
             if sym in sent_agg:
                 evidence.extend(sent_agg[sym].evidence)
             if sym in news_ev:

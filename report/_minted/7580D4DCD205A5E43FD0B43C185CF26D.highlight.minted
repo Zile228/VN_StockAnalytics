@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{grid}\PYG{p}{,} \PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{grid} \PYG{o}{=} \PYG{n}{grid}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{m} \PYG{o}{=} \PYG{n}{grid}\PYG{o}{.}\PYG{n}{m}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{n} \PYG{o}{=} \PYG{n}{grid}\PYG{o}{.}\PYG{n}{n}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}positions} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{index\PYGZus{}by\PYGZus{}pos} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{pos}\PYG{p}{:}\PYG{n}{i} \PYG{k}{for} \PYG{n}{i}\PYG{p}{,} \PYG{n}{pos} \PYG{o+ow}{in} \PYG{n+nb}{enumerate}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}\PYG{p}{\PYGZcb{}}
+    \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{K} \PYG{o}{=} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dirty\PYGZus{}positions}\PYG{p}{)}
+\end{MintedVerbatim}

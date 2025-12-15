@@ -1,4 +1,38 @@
-# Prompt 1
+# CHANGELOG / DEVELOPMENT STATUS (AHT_13)
+
+## Snapshot (2025-12-15)
+
+### Implemented (demo-ready)
+
+- **Deterministic recommendation pipeline (LLM optional)**: `src/llm_orchestrator/`, `src/rulebase/`, `src/optimizer/`, `src/data_access/`
+- **Data layer gold-first + quality tooling**:
+  - `main.py` commands: `data_quality`, `clean_ohlcv`, `ingest_fundamentals`, `ingest_fx`, `build_dataset`, `recommend`
+  - Gold outputs: `data/gold/vn30_history_clean.csv`, `data/gold/fundamentals_long.csv`, `data/gold/usdvnd_daily.csv`
+- **Forecast bundle integration (artifacts)**: `models/artifacts_h7/` + `src/modeling/forecast_bundle.py`
+- **Backend API (FastAPI)**: `app/main.py`
+  - **Explorer endpoints**: `/api/stocks`, `/api/stocks/{symbol}/history|latest|features|news|prediction`
+  - **Recommendation endpoint**: `/api/recommend`
+  - **Dashboard/Portfolio/Backtest endpoints**:
+    - `/api/dashboard/overview` (VN30 equal-weight proxy index)
+    - `/api/portfolio/optimize` (seeded Monte Carlo)
+    - `/api/backtest/run` (deterministic rebalance backtest)
+- **Frontend web integration**: `web/`
+  - Vite proxy `/api` → backend
+  - **Stock Explorer**: backend mode + candlestick/zoom + volume + OHLC tooltip
+  - **Signals**: backend mode via `/api/recommend`
+  - **Dashboard / Portfolio / Backtest**: backend mode via new endpoints
+
+### Deferred / Pending (nice-to-have / future work)
+
+- **Advisory backend**: currently UI uses in-browser mock logic (`web/src/components/advisory/AdvisoryPanel.tsx` + `web/src/services/advisoryService.ts`)
+- **Simulation backend**: currently UI uses in-browser mock logic (`web/src/components/simulation/SimulationPanel.tsx`)
+- **Knowledge layer “explainability” outputs**:
+  - Feature-importance/attention narratives and “pattern mining” summaries described in TDD phần 7 chưa được expose thành API/visuals
+- **News/sentiment corpus expansion**: doc handoff spec exists; ingestion expansion is separate task
+
+---
+
+# Prompt 1 (development history)
 
 Bạn là senior Python engineer + ML engineer. Mục tiêu: triển khai module “LLM Orchestrator” để tạo khuyến nghị đặt lệnh (buy/sell/hold), kế hoạch vào lệnh (limit/ladder), quản trị rủi ro (SL/TP theo ATR/vol), và phân bổ danh mục (deterministic optimizer), dựa trên dữ liệu sẵn có trong repo VN_STOCKANALYTICS.
 

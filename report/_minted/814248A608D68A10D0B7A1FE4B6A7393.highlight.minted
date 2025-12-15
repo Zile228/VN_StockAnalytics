@@ -1,0 +1,8 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{run\PYGZus{}all\PYGZus{}algorithms}\PYG{p}{(}\PYG{n}{m}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{n}\PYG{o}{=}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{dirty\PYGZus{}count}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{seed}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,}
+    \PYG{n}{astar\PYGZus{}heuristics}\PYG{p}{:} \PYG{n}{Iterable}\PYG{p}{[}\PYG{n+nb}{str}\PYG{p}{]} \PYG{o}{=} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Chebyshev}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Manhattan}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+                                      \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Euclid}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{Octile}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{visualize}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}\PYG{p}{:}
+    \PYG{c+c1}{\PYGZsh{} ... (Implementation details omitted)}
+    \PYG{k}{pass}
+\end{MintedVerbatim}

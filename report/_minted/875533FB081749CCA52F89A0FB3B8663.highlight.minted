@@ -1,0 +1,4 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{manhattan}\PYG{p}{(}\PYG{n}{a}\PYG{p}{,} \PYG{n}{b}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{return} \PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{a}\PYG{o}{.}\PYG{n}{x} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{o}{.}\PYG{n}{x}\PYG{p}{)} \PYG{o}{+} \PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{a}\PYG{o}{.}\PYG{n}{y} \PYG{o}{\PYGZhy{}} \PYG{n}{b}\PYG{o}{.}\PYG{n}{y}\PYG{p}{)}
+\end{MintedVerbatim}

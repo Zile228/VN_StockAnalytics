@@ -1,0 +1,9 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{reconstruct\PYGZus{}path}\PYG{p}{(}\PYG{n}{came\PYGZus{}from}\PYG{p}{,} \PYG{n}{current}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{path} \PYG{o}{=} \PYG{p}{[}\PYG{n}{current}\PYG{p}{]}
+    \PYG{k}{while} \PYG{n}{current} \PYG{o+ow}{in} \PYG{n}{came\PYGZus{}from}\PYG{p}{:}
+        \PYG{n}{current} \PYG{o}{=} \PYG{n}{came\PYGZus{}from}\PYG{p}{[}\PYG{n}{current}\PYG{p}{]}
+        \PYG{n}{path}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{current}\PYG{p}{)}
+    \PYG{n}{path}\PYG{o}{.}\PYG{n}{reverse}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{return} \PYG{n}{path}
+\end{MintedVerbatim}

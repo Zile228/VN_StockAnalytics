@@ -1,0 +1,50 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{astar\PYGZus{}search}\PYG{p}{(}\PYG{n}{encoder}\PYG{p}{:}\PYG{n}{ProblemEncoder}\PYG{p}{,} \PYG{n}{max\PYGZus{}expansions}\PYG{o}{=}\PYG{l+m+mi}{200000}\PYG{p}{,}
+                   \PYG{n}{heuristic\PYGZus{}fn}\PYG{o}{=}\PYG{k+kc}{None}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{if} \PYG{n}{heuristic\PYGZus{}fn} \PYG{o+ow}{is} \PYG{k+kc}{None}\PYG{p}{:}
+        \PYG{n}{heuristic\PYGZus{}fn} \PYG{o}{=} \PYG{n}{make\PYGZus{}heuristic}\PYG{p}{(}\PYG{n}{chebyshev}\PYG{p}{)}
+
+    \PYG{n}{start} \PYG{o}{=} \PYG{n}{encoder}\PYG{o}{.}\PYG{n}{initial\PYGZus{}state}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{frontier} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]} \PYG{c+c1}{\PYGZsh{} Priority queue}
+    \PYG{n}{g\PYGZus{}score} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{start}\PYG{p}{:} \PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}
+    \PYG{n}{f0} \PYG{o}{=} \PYG{n}{heuristic\PYGZus{}fn}\PYG{p}{(}\PYG{n}{start}\PYG{p}{,} \PYG{n}{encoder}\PYG{p}{)}
+    \PYG{n}{heapq}\PYG{o}{.}\PYG{n}{heappush}\PYG{p}{(}\PYG{n}{frontier}\PYG{p}{,} \PYG{p}{(}\PYG{n}{f0}\PYG{p}{,} \PYG{n}{start}\PYG{p}{)}\PYG{p}{)}
+    \PYG{n}{came\PYGZus{}from} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{n}{start}\PYG{p}{:} \PYG{k+kc}{None}\PYG{p}{\PYGZcb{}}
+    \PYG{n}{expansions} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{n}{t0} \PYG{o}{=} \PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{(}\PYG{p}{)}
+
+    \PYG{k}{while} \PYG{n}{frontier}\PYG{p}{:}
+        \PYG{n}{\PYGZus{}}\PYG{p}{,} \PYG{n}{current} \PYG{o}{=} \PYG{n}{heapq}\PYG{o}{.}\PYG{n}{heappop}\PYG{p}{(}\PYG{n}{frontier}\PYG{p}{)}
+
+        \PYG{k}{if} \PYG{n}{encoder}\PYG{o}{.}\PYG{n}{goal\PYGZus{}test}\PYG{p}{(}\PYG{n}{current}\PYG{p}{)}\PYG{p}{:}
+            \PYG{n}{t\PYGZus{}ms} \PYG{o}{=} \PYG{p}{(}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{(}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{t0}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mf}{1000.0}
+            \PYG{n}{path\PYGZus{}states} \PYG{o}{=} \PYG{n}{reconstruct\PYGZus{}path}\PYG{p}{(}\PYG{n}{came\PYGZus{}from}\PYG{p}{,} \PYG{n}{current}\PYG{p}{)}
+            \PYG{n}{total\PYGZus{}cost}\PYG{p}{,} \PYG{n}{steps}\PYG{p}{,} \PYG{n}{leftovers} \PYG{o}{=} \PYG{n}{compute\PYGZus{}plan\PYGZus{}cost}\PYG{p}{(}\PYG{n}{encoder}\PYG{p}{,}
+                                                            \PYG{n}{path\PYGZus{}states}\PYG{p}{)}
+            \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{name}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{A*}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{path\PYGZus{}states}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{path\PYGZus{}states}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cost}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{total\PYGZus{}cost}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{expanded}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{expansions}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{steps}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{steps}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{time\PYGZus{}ms}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{t\PYGZus{}ms}\PYG{p}{,}
+                    \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{leftovers}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{leftovers}\PYG{p}{\PYGZcb{}}
+
+        \PYG{n}{expansions} \PYG{o}{+}\PYG{o}{=} \PYG{l+m+mi}{1}
+        \PYG{k}{if} \PYG{n}{expansions} \PYG{o}{\PYGZgt{}} \PYG{n}{max\PYGZus{}expansions}\PYG{p}{:}
+            \PYG{k}{break}
+
+        \PYG{k}{for} \PYG{n}{action} \PYG{o+ow}{in} \PYG{n}{encoder}\PYG{o}{.}\PYG{n}{actions}\PYG{p}{(}\PYG{n}{current}\PYG{p}{)}\PYG{p}{:}
+            \PYG{n}{nxt}\PYG{p}{,} \PYG{n}{step\PYGZus{}cost} \PYG{o}{=} \PYG{n}{encoder}\PYG{o}{.}\PYG{n}{step}\PYG{p}{(}\PYG{n}{current}\PYG{p}{,} \PYG{n}{action}\PYG{p}{)}
+            \PYG{n}{tentative\PYGZus{}g} \PYG{o}{=} \PYG{n}{g\PYGZus{}score}\PYG{p}{[}\PYG{n}{current}\PYG{p}{]} \PYG{o}{+} \PYG{n}{step\PYGZus{}cost}
+
+            \PYG{k}{if} \PYG{n}{tentative\PYGZus{}g} \PYG{o}{\PYGZlt{}} \PYG{n}{g\PYGZus{}score}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{n}{nxt}\PYG{p}{,} \PYG{n+nb}{float}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{inf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}\PYG{p}{:}
+                \PYG{n}{came\PYGZus{}from}\PYG{p}{[}\PYG{n}{nxt}\PYG{p}{]} \PYG{o}{=} \PYG{n}{current}
+                \PYG{n}{g\PYGZus{}score}\PYG{p}{[}\PYG{n}{nxt}\PYG{p}{]} \PYG{o}{=} \PYG{n}{tentative\PYGZus{}g}
+                \PYG{n}{f} \PYG{o}{=} \PYG{n}{tentative\PYGZus{}g} \PYG{o}{+} \PYG{n}{heuristic\PYGZus{}fn}\PYG{p}{(}\PYG{n}{nxt}\PYG{p}{,} \PYG{n}{encoder}\PYG{p}{)}
+                \PYG{n}{heapq}\PYG{o}{.}\PYG{n}{heappush}\PYG{p}{(}\PYG{n}{frontier}\PYG{p}{,} \PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{nxt}\PYG{p}{)}\PYG{p}{)}
+
+    \PYG{n}{t\PYGZus{}ms} \PYG{o}{=} \PYG{p}{(}\PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{(}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{t0}\PYG{p}{)}\PYG{o}{*}\PYG{l+m+mf}{1000.0}
+    \PYG{k}{return} \PYG{p}{\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{name}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{A*}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{path\PYGZus{}states}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{p}{[}\PYG{p}{]}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{cost}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n+nb}{float}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{inf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{expanded}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{expansions}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{steps}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{time\PYGZus{}ms}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{n}{t\PYGZus{}ms}\PYG{p}{,}
+            \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{leftovers}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{:}\PYG{k+kc}{None}\PYG{p}{\PYGZcb{}}
+\end{MintedVerbatim}
