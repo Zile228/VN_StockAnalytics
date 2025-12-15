@@ -1,6 +1,8 @@
 # --- Dữ liệu & Xử lý ---
 pandas>=2.0.0
 numpy
+openpyxl
+pydantic>=2.0.0
 
 # --- Web Crawler ---
 requests

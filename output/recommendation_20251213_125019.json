@@ -1,0 +1,74 @@
+{
+  "horizon_days": 7,
+  "recommended_actions": [
+    {
+      "symbol": "VIC",
+      "action": "buy",
+      "target_weight": 0.25,
+      "confidence": 0.8918289235163382,
+      "expected_return": 0.08374164810690435,
+      "uncertainty_band": {
+        "p10": -0.025358818143277354,
+        "p50": 0.08374164810690435,
+        "p90": 0.19284211435708604
+      },
+      "order_plan": {
+        "order_type": "limit",
+        "entry_rule": "BUY via LIMIT: place near last_close=148.80 (consider slight improvement vs last print).",
+        "ladder": null,
+        "time_in_force": "day"
+      },
+      "risk_controls": {
+        "stop_loss_rule": "StopLoss: set at entry - 1.2*ATR14 => ~140.29 (ATR14=7.09).",
+        "take_profit_rule": "TakeProfit: set at entry + 2.0*ATR14 => ~162.99 (ATR14=7.09).",
+        "max_loss_pct_portfolio": 0.01
+      },
+      "evidence": [
+        "[VIC] Price asof=2025-12-10 close=148.80",
+        "[VIC] Momentum 5d=0.1047; vol20d=0.0322; ATR14=7.0929",
+        "[VIC] 2025-12-10 10:38 TCBS: VIC: Thông báo giao dịch cổ phiếu của Người nội bộ Phạm Nhật Vượng (điều chỉnh) (sent=0.0, rel=0.0)",
+        "[VIC] 2025-12-10 10:37 TCBS: VIC: Thông báo giao dịch cổ phiếu của tổ chức có liên quan của Người nội bộ CTCP Đầu tư và Phát triển Đường sắt Cao tốc Vinspeed (điều chỉnh) (sent=0.0, rel=0.0)",
+        "[VIC] 2025-12-08 19:00 TCBS: VIC: CBTT Tập đoàn Vingroup đầu tư ra nước ngoài (sent=0.0, rel=0.0)",
+        "[VIC] 2025-12-10 10:38 TCBS: VIC: Thông báo giao dịch cổ phiếu của Người nội bộ Phạm Nhật Vượng (điều chỉnh)",
+        "[VIC] 2025-12-10 10:37 TCBS: VIC: Thông báo giao dịch cổ phiếu của tổ chức có liên quan của Người nội bộ CTCP Đầu tư và Phát triển Đường sắt Cao tốc Vinspeed (điều chỉnh)"
+      ],
+      "invalidation": [
+        "Nếu đóng cửa < (entry - k*ATR) theo rule stop-loss.",
+        "Nếu vol regime tăng mạnh (vol20d spike) làm giảm xác suất thesis."
+      ]
+    },
+    {
+      "symbol": "MBB",
+      "action": "buy",
+      "target_weight": 0.24506217943311556,
+      "confidence": 0.4992542207256576,
+      "expected_return": 0.019551934826883867,
+      "uncertainty_band": {
+        "p10": -0.043327595537724285,
+        "p50": 0.019551934826883867,
+        "p90": 0.08243146519149203
+      },
+      "order_plan": {
+        "order_type": "limit",
+        "entry_rule": "BUY via LIMIT: place near last_close=25.15 (consider slight improvement vs last print).",
+        "ladder": null,
+        "time_in_force": "day"
+      },
+      "risk_controls": {
+        "stop_loss_rule": "StopLoss: set at entry - 1.2*ATR14 => ~24.38 (ATR14=0.64).",
+        "take_profit_rule": "TakeProfit: set at entry + 2.0*ATR14 => ~26.43 (ATR14=0.64).",
+        "max_loss_pct_portfolio": 0.01
+      },
+      "evidence": [
+        "[MBB] Price asof=2025-12-10 close=25.15",
+        "[MBB] Momentum 5d=0.0244; vol20d=0.0185; ATR14=0.6393"
+      ],
+      "invalidation": [
+        "Nếu đóng cửa < (entry - k*ATR) theo rule stop-loss.",
+        "Nếu vol regime tăng mạnh (vol20d spike) làm giảm xác suất thesis."
+      ]
+    }
+  ],
+  "cash_weight": 0.5049378205668844,
+  "notes": "LLM disabled: plan được tạo bằng rulebase + optimizer deterministic. Hãy kiểm tra lại mức rủi ro/khả năng khớp lệnh trước khi đặt lệnh. | Macro: Y2024Q4 INF=0.0285 GDP=0.0709 DC=0.1509"
+}
